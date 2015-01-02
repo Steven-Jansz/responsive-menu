@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Responsive Menu</title>
-<link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
 <div class="page-container">
@@ -23,7 +23,7 @@
    </nav>   
   </div>
 </div>
-<script language="JavaScript" type="text/javascript" src="assets/js/jquery-1.11.0.js"></script> 
-<script language="JavaScript" type="text/javascript" src="assets/js/scripts.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="jquery.js"></script> 
+<script language="JavaScript" type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
