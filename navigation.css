@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*..NAVIGATION..*/
+.nav-bar {min-height: 40px;width: 100%;background: #58DDAF;font-size: 1em;font-weight: bold;position: relative;}
+.nav-bar ul {padding: 0;margin: 0 auto;float:left;height: 40px;}
+.nav-bar li {display: inline;float: left;}
+.clearfix:before,.clearfix:after {content: " ";display: table;}
+.clearfix:after { clear: both;}
+.clearfix {*zoom: 1;}
+.nav-bar a {display: inline-block;text-align: center;text-decoration: none;line-height: 40px;}
+
+.transition { min-width:120px; color:#fff; border-left:solid 1px #fff; cursor: pointer;text-transform: uppercase;letter-spacing: 1px;outline: none;position: relative;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
+.transition:hover,.transition:active {color: #fff; background:#12d18f;}
+.transition:hover:after,.transition:active:after {height: 100%;}
+.nav-bar li:last-child a.transition { border-right:solid 1px #fff;}
+
+.menu{  width:40px; height:40px; display:block; background: url('sprite.png') -70px 5px no-repeat ;}
+.nav-bar a#nav-bar-icon:hover  .menu{ background: url('sprite.png') -111px 5px no-repeat ;}
+
+.nav-bar a#nav-bar-icon {display: none;} 
+
+@media screen and (max-width: 767px) {
+.page-container { max-width: 750px;margin:0px 0%;}
+.nav-bar {height: auto;}  
+.nav-bar ul {  width: 100%;  display: block;  height: auto;  }  
+.nav-bar li {  width: 50%;  float: left;  position: relative;  }  
+.nav-bar li a {  border-bottom: 1px solid #fff;  border-right:none;  }  
+.nav-bar a {  text-align: left;   width: 100%;  text-indent: 25px;  }  
+}
+ 
+@media only screen and (max-width : 480px) { 
+.nav-bar a#nav-bar-icon { color:#fff;  display: block;  background-color: #12d18f;  width: 100%;  position: relative;  border-bottom: 1px solid #fff;  }  
+.nav-bar a#nav-bar-icon:after {  content:" "; width: 30px;  height: 30px;  display: inline-block;  position: absolute;  right: 15px;  top: 10px;  }  
+.nav-bar { background:#58DDAF;  }  
+.nav-bar ul {  display: none;   height: auto;  } 
+.nav-bar li {  display: block;  float: none;  width: 100%;  }  
+.nav-bar li a {  border-bottom: 1px solid #fff;  }  	
+.transition:hover,.transition:active {color: #fff; background:#12d18f;}
+} 
+
